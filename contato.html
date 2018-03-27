@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta https-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contatos - ChatSchool</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/pages/contato.min.css">
+	<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+</head>
+<body>
+	<header id="header" class="page-contato">
+		<div class="container">
+			<div class="row">
+				<div id="col col-desktop-3 col-6">
+					<a href="index.html"><img src="images/logo.png" alt="Logo da ChatSchool"></a>					
+				</div>
+				<div id="col col-desktop-9 col-6">
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="quem-somos.html">Quem Somos</a></li>
+							<li><a href="clientes.html">Clientes</a></li>
+							<li><a href="equipe.html">Equipe</a></li>
+							<li><a href="contato.html" class="active">Contatos</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col col-desktop-12 title">
+					<h1>Contate-nos</h1> 
+				</div>				
+			</div>			
+		</div>
+	</header>
+	<main>
+	<section class="section section-center">
+		<h2>Contato</h2>
+		<div class="container"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita reprehenderit quam molestiae obcaecati labore recusandae totam, magni iusto debitis? Blanditiis, veniam officia repellat delectus quaerat nesciunt debitis praesentium placeat ipsam ut! Dignissimos ullam expedita tempora vero modi et aspernatur totam.</p>
+			<!-- https://github.com/dwyl/html-form-send-email-via-google-script-without-server -->
+			<form action="https://script.google.com/macros/s/AKfycbyaA8THiuuDgz5WOqNdlgwN70R8FWfQ2tbuTEBp_C6K_RxoIJVe/exec" class="row" method="post">
+				<div class="col col-desktop-6" id="tabelaInput">					
+					<div class="input-control">
+						<input id="nome" name="nome" type="text" required placeholder="nome...">
+						<label for="nome">Nome*</label>
+					</div>
+					<div class="input-control">
+						<input id="email" name="email" type="email" required placeholder="email...">
+						<label for="email">Email*</label>
+					</div>
+					<div class="input-control">
+						<input id="telefone" name="telefone" type="number" placeholder="telefone...">
+						<label for="telefone">Telefone</label>
+					</div>
+				</div>
+				<div class="col col-desktop-6">
+					<div class="input-control">
+						<textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="mensagem..."></textarea>
+						<label for="mensagem">Mensagem</label>
+					</div>
+				</div>
+				<input type="submit" value="Enviar" class="btn orange">
+			</form>
+		</div>		
+	</section>
+	</main>
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<h3>Menu</h3>
+				<div class="col col-desktop-4">
+					<p><a href="index.html"><img src="images/logo.png" alt="Logo da ChatSchool"></a>     
+					Essa é a versão oficial do site Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore numquam provident culpa debitis nostrum minus, inventore, quam alias est dicta doloremque et fugit a impedit quibusdam sequi aliquid nobis.</p>
+				</div>
+				<div class="col col-offset-desktop-1 col-desktop-3 col-2">
+					<nav>
+						<ul>
+							<li><a href="index.html" class="active">Home</a></li>
+							<li><a href="quem-somos.html">Quem Somos</a></li>
+							<li><a href="clientes.html">Clientes</a></li>
+							<li><a href="equipe.html">Equipe</a></li>
+							<li><a href="contato.html">Contatos</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col col-desktop-4 col-4">
+					<a href=""><img class="logoBoxBottom" src="images/social-facebook.png" alt="Logo Facebook"></a>
+					<a href=""><img class="logoBoxBottom" src="images/social-twitter.png" alt="Logo Twitter"></a>
+					<a href=""><img class="logoBoxBottom" src="images/social-youtube.png" alt="Logo Youtube"></a>
+				</div>
+			</div>			
+		</div>
+	</footer>
+	<div class="copyright">
+		<p>&copy; ChatSchool - 2018 - Todos os Direitos Reservados - Produzido por Cristóvão Carlos</p>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+		$('form').submit(function (event) {
+			event.preventDefault();
+
+			$('form input[type="submit"]').val('Aguarde....').attr('disabled', true);
+			
+			$.ajax({
+				type: $('form').attr('method'),
+				url: $('form').attr('action'),
+				data: $('form').serialize(),
+				sucess: function () {
+					
+				}	
+			});
+			alert('Email enviado com sucesso!');
+			$('form').trigger('reset');
+			$('form input[type="submit"]').val('Enviar').attr('disabled', false);			
+		});
+	</script>
+
+</body>
+</html>

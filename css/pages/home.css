@@ -1,0 +1,53 @@
+@import url(../styles.css);
+
+
+#header.page-home{
+	background-image: url("../../images/background-header.jpg");
+}
+
+
+#How-it-work {	
+	padding: 30px 0px 30px 0px;
+}
+#Costumers{
+	background-color: rgb(242, 242, 242);
+	padding: 20px 0px 20px 0px;
+}
+#Costumers .btn {
+	background-color: rgb(220,220, 220);
+	color: rgb(130,130,130);
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+#Costumers .btn:hover {
+	background-color: rgb(120,120,120);
+	color: rgb(255,255,255);
+}
+#Costumers .btn .material-icons {
+	vertical-align: middle;
+}
+#team{
+	background-color: rgb(84, 209,84);
+	color: white;
+}
+#team .img-box-round {
+	width: 120px;
+	height: 120px;
+}
+#team .container .row .img-box-label:before{
+	content: '';
+	text-align: center;
+	display: block;
+	background-color: rgb(130, 130, 130);
+	margin: 10px auto 0 auto;
+	padding:25px 0 25px 0;
+	width: 2px;
+	height: 25px;
+}
+#team h2:after{
+	background-color: rgb(255,255,255);
+}
+
+@media (max-width: 992px) {
+	 
+}

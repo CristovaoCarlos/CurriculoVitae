@@ -1,0 +1,63 @@
+.icon-container{
+	display: inline-block;
+	width: 140px;
+	height: 140px;
+	background: #e1f3e1;
+	border-radius: 10px;
+	position: relative;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v36/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.icon-container .material-icons{
+	display: block;
+	
+	color: rgb(84, 209,84);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: default;
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;	
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	-webkit-font-feature-settings: 'liga';
+	-webkit-font-smoothing: antialiased;
+}
+
+a .material-icons{
+	color: #fff;	
+	top: 50%;
+	left: 50%;
+	font-size: 20px;
+	transform: translate(-50%, -50%);
+	cursor: default;
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;	
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	-webkit-font-smoothing: antialiased;
+}
+
+.img-box-round {
+	display: inline-block;
+	border-radius: 100%;
+	background-color: rgb(255, 255, 255);
+	overflow: hidden;
+}
